@@ -4,7 +4,7 @@ const { keyMapping } = require("./constants");
 let connection;
 
 // setup interface to handle user input from stdin
-const setupInput = function (conn) {
+const setupInput = function(conn) {
   connection = conn;
   const stdin = process.stdin;
   stdin.setRawMode(true);
@@ -15,7 +15,7 @@ const setupInput = function (conn) {
 };
 
 // "data" callback handler for stdin
-const handleUserInput = function (key) {
+const handleUserInput = function(key) {
 
   // quit game
   if (key === "x") {
@@ -27,7 +27,7 @@ const handleUserInput = function (key) {
   if (msg) {
     connection.write(msg);
   }
-  
+
 };
 
 module.exports = {
