@@ -29,4 +29,4 @@ Before you can run this client, you will need to be running the server side whic
 | Message #2 | 2  |
 | Message #3 | 3  |
 | Message #4 | 4  |
-| Quit Game | ctrl+c  |
+| Quit Game | x  |
