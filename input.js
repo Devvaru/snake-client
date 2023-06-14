@@ -29,6 +29,20 @@ const handleUserInput = function (key) {
     case 'd':
       connection.write("Move: right");
       break;
+    // messages
+    case '1':
+      connection.write("Say: So long!");
+      break;
+    case '2':
+      connection.write("Say: You're hisssterical!");
+      break;
+    case '3':
+      connection.write("Say: Throw a hissy fit!");
+      break;
+    case '4':
+      connection.write("Say: Don’t hiss me off!");
+      break;
+    // end game
     case '\u0003': // ctrl+c
       process.exit();
       break;
