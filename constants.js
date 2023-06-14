@@ -8,7 +8,7 @@ const keyMapping = {
   "d": "right",
   1: "So long!",
   2: "You're hisssterical!",
-  3: "Throw a hissy fit!",
+  3: "Sssee you later!",
   4: "Don’t hiss me off!"
 }
 
