@@ -3,6 +3,7 @@ const { IP, PORT, userName } = require("./constants");
 
 // establishes a connection with the game server
 const connect = function () {
+  console.log("Connecting ...");
   const conn = net.createConnection({
     host: IP,
     port: PORT
@@ -20,6 +21,10 @@ const connect = function () {
     console.log("Successfully connected to game server");
     conn.write(`Name: ${userName}`);
   });
+
+  conn.on("error", () => {
+    console.log("You can't move when you're dead! Quit game to restart.");
+  })
 
   return conn;
 };
