@@ -1,4 +1,5 @@
 const { stdin } = require("process");
+const { keyMapping } = require("./constants");
 
 let connection;
 
@@ -18,29 +19,29 @@ const handleUserInput = function (key) {
 
   switch (key) {
     case 'w':
-      connection.write("Move: up");
+      connection.write(`Move: ${keyMapping["w"]}`);
       break;
     case 'a':
-      connection.write("Move: left");
+      connection.write(`Move: ${keyMapping["a"]}`);
       break;
     case 's':
-      connection.write("Move: down");
+      connection.write(`Move: ${keyMapping["s"]}`);
       break;
     case 'd':
-      connection.write("Move: right");
+      connection.write(`Move: ${keyMapping["d"]}`);
       break;
     // messages
     case '1':
-      connection.write("Say: So long!");
+      connection.write(`Say: ${keyMapping[1]}`);
       break;
     case '2':
-      connection.write("Say: You're hisssterical!");
+      connection.write(`Say: ${keyMapping[2]}`);
       break;
     case '3':
-      connection.write("Say: Throw a hissy fit!");
+      connection.write(`Say: ${keyMapping[3]}`);
       break;
     case '4':
-      connection.write("Say: Don’t hiss me off!");
+      connection.write(`Say: ${keyMapping[4]}`);
       break;
     // end game
     case '\u0003': // ctrl+c
