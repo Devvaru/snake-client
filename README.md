@@ -15,10 +15,9 @@ Before you can run this client, you will need to be running the server side whic
 
 - Follow steps inside the [snek server repo](https://github.com/lighthouse-labs/snek-multiplayer) to run the server side
 - Run the development snake client using the `node play.js` command.
-- You can set your name in the constants.js file under "userName"
+- You can set your name in the `constants.js` file under `userName`
 
 ## Movement Controls
-<br>
 
 | Action    | Input  |
 | :--- | :--- |
